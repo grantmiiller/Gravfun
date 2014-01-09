@@ -124,7 +124,7 @@
         render();
 
         oldTime = newTime;
-        stopper = window.requestAnimationFrame(step);
+        stopper = window.requestAnimFrame(step);
     }
 
     function makeBalls(num) {
