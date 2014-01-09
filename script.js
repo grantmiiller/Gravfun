@@ -61,7 +61,7 @@
         this.xv = options.xv || 0;
 
         this.calculateVelocity = function(delta) {
-            this.yv -= W.gravity;
+            this.yv -= (W.gravity + W.airFriction);
             this.y += this.yv;
 
             if(this.xv > 0) {
