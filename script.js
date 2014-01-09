@@ -35,7 +35,7 @@
             x: canvas.width,
             y: canvas.height,
             airFriction: 0.001,
-            groundFriction: .5,
+            groundFriction: 0.08,
             gravity: 1
         },
 
@@ -94,8 +94,6 @@
                 this.y = this.radius;
                 this.yv *= -this.br; 
             }
-
-            console.log(this.xv);
         };
 
         this.draw = function() {
@@ -111,7 +109,7 @@
     init();
 
     function init() {
-        makeBalls(5);
+        makeBalls(2);
 
         oldTime = Date.now();
         step();
